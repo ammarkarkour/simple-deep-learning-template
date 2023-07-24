@@ -1,1 +1,4 @@
-# simple-deep-learning-template
+# deep-learning-template
+
+
+This repository houses a comprehensive template designed specifically for substantial deep learning projects. Its purpose is to facilitate the segregation of various project components, enabling streamlined management and enhanced organization of diverse experiments. By leveraging this template, researchers and developers can experience improved efficiency in their workflow while effectively monitoring and documenting their experimentation processes. This template is most suitable for vision tasks, but with few modifications it can be used for other tasks. This is a simpler design for simpler projects with all components in one file, making navigation and importing easier.

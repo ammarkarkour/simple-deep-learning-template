@@ -1,0 +1,6 @@
+class DataConfig:
+    TRAINING_PATH = ""
+    VALIDATION_PATH = ""
+    MINI_BATCH_SIZE = 128
+    BATCH_SIZE = 512
+    NUM_WORKERS = 16
