@@ -55,7 +55,7 @@ def train_epoch(device, writer, model, epoch, optimizer, criterion,
         loss.backward()
 
         # Update the weights & biases
-        if i % DataModules.Update_step == 0 or i == len_train_loader:
+        if i % DataloadersModules.Update_step == 0 or i == len_train_loader:
 
             # Take a step
             optimizer.step()
@@ -103,7 +103,7 @@ def run_training(device, writer, model, start_epoch, epochs, optimizer,
         set_lr(optimizer, LogConfig.Log_dir)
 
         # Log progress
-        writer.add_scalar("validation accuracy", validation_accuracy)
+        writer.add_scalar("validation accuracy", validation_accuracy, i)
 
 
 if __name__ == "__main__":
