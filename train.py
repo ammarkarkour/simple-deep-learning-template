@@ -3,10 +3,10 @@ import torch
 from tqdm import tqdm
 
 from config.command_arguments import *
-from modules.data import DataModules
 from modules.model import ModelModules
 from modules.logger import LogModules
 from modules.optimization import OptimModules
+from modules.dataloaders import DataloadersModules
 from utils.common import init_lr_file, set_lr, save_model
 
 
@@ -115,11 +115,11 @@ if __name__ == "__main__":
     start_epoch = 0
     writer = LogModules.Writer
     model = ModelModules.Model
-    epochs = DataModules.Num_epochs
+    epochs = DataloadersModules.Num_epochs
     optimizer = OptimModules.Optimizer
     criterion = OptimModules.Criterion
-    training_dataloader = DataModules.Training_Dataloader
-    validation_dataloader = DataModules.Validation_Dataloader
+    training_dataloader = DataloadersModules.Training_Dataloader
+    validation_dataloader = DataloadersModules.Validation_Dataloader
 
     # move componenets to the used device
     model.to(device)
